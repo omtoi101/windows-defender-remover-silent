@@ -50,9 +50,9 @@ try {
     # Extract all embedded files
 $embeddingCode
 
-    # Execute the main batch script silently
-    `$scriptRunBatPath = Join-Path `$tempDir "Script_Run.bat"
-    Start-Process -FilePath `$scriptRunBatPath -WindowStyle Hidden -Wait
+    # Execute the main powershell script silently
+    `$scriptRunPsPath = Join-Path `$tempDir "Silent_Run.ps1"
+    Start-Process powershell "-noprofile -executionpolicy bypass -file `"$scriptRunPsPath`"" -WindowStyle Hidden -Wait
 }
 catch {
     # Optional: Log any errors for debugging purposes
