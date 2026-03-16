@@ -57,16 +57,16 @@ you can use git
 ```
 git clone https://github.com/ionuttbara/windows-defender-remover.git
 cd windows-defender-remover
-Script_Run.bat
+PowerShell -ExecutionPolicy Bypass -File Silent_Run.ps1
 ```
 
 
 OR
 
 you can use download entire source code
-1. Download the source code from [Releases](https://github.com/jbara2002/windows-defender-remover/releases).
+1. Download the source code from [Releases](https://github.com/ionuttbara/windows-defender-remover/releases).
 2. Choose the file **Source Code(.zip)** from last version and download it.
-3. Unarchive the file into a folder and run the Script_Run.bat.
+3. Unarchive the file into a folder and run `Silent_Run.ps1` with PowerShell as administrator.
 
 ![cli](https://github.com/drunkwinter/windows-defender-remover/assets/38593134/46007191-0a65-43c2-b451-a993ff90e00e)
 
